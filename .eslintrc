@@ -5,13 +5,17 @@
     "es6": true
   },
   "root": true,
-  "parser": "babel-eslint",
+  "parser": "@babel/eslint-parser",
   "parserOptions": {
     "ecmaVersions": 10,
     "sourcetype": "module",
+    "requireConfigFile": false,
     "ecmaFeatures": {
       "arrowFunctions": true,
       "jsx": true
+    },
+    "babelOptions": {
+      "presets": ["@babel/preset-react"]
     }
   },
   "plugins": [
@@ -32,6 +36,7 @@
     "quotes": ["error", "single"],
     "react/jsx-indent": 0,
     "react/display-name": 0,
+    "react-hooks/exhaustive-deps": 0,
     "no-console": 0,
     "no-unused-vars": 0,
     "no-useless-catch": "off"

@@ -1,14 +1,15 @@
-import React, {useState} from 'react';
-import {withRouter} from 'react-router-dom';
+import React, {SyntheticEvent, useState} from 'react';
+// import {withRouter} from 'react-router-dom';
 
-import style from '../../styles/scss/main.scss';
+import style from '../../styles/scss/main.module.scss';
 import en from '../../pdf/resume_e_Mar21.pdf';
 import ja from '../../pdf/resume_j_Mar21.pdf';
 
-const Resume = () => {
+const Resume: React.FunctionComponent = () => {
     const [active, setActive] = useState(0);
-    const handleClick = (e) => {
-        const index = parseInt(e.target.id, 2);
+    const handleClick = (e: SyntheticEvent) => {
+        console.log(e.target);
+        const index = parseInt((e.target as Element).id, 2);
         if (index !== active) {
             setActive(index);
         }
@@ -66,4 +67,4 @@ const Resume = () => {
     );
 };
 
-export default withRouter(Resume);
+export default Resume;

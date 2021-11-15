@@ -3,6 +3,7 @@
 const webpack = require('webpack'),
     path = require('path'),
     // glob = require('glob'),
+    ESLintPlugin = require('eslint-webpack-plugin'),
     MiniCssExtractPlugin = require('mini-css-extract-plugin'),
     HtmlWebpackPlugin = require('html-webpack-plugin');
 
@@ -39,6 +40,7 @@ module.exports = {
             template: source + '/html/index.html',
             filename: 'index.html',
         }),
+        new ESLintPlugin()
     ],
     resolve: {
         extensions: [
@@ -84,12 +86,6 @@ module.exports = {
                 ],
             },
             {
-                enforce: 'pre',
-                test: /\.js$/,
-                exclude: /node_modules/,
-                loader: 'eslint-loader',
-            },
-            {
                 test: /\.s?p?css$/,
                 use: [
                     MiniCssExtractPlugin.loader,
@@ -123,7 +119,7 @@ module.exports = {
                 loader: 'html-loader',
             },
             {
-                test: /\.(png|jpe?g|gif|ico)$/,
+                test: /\.(png|jpe?g|gif|ico|svg)$/,
                 loader: 'file-loader',
                 options: {
                     name: 'images/[name].[ext]',
@@ -131,7 +127,7 @@ module.exports = {
                 },
             },
             {
-                test: /\.(ttf|eot|svg|woff2?)$/,
+                test: /\.(ttf|eot|woff2?)$/,
                 loader: 'file-loader',
                 options: {
                     name: 'fonts/[ext]/[name].[ext]',

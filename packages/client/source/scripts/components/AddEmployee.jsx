@@ -1,5 +1,6 @@
 import React, {useState, useContext} from 'react';
-import {useHistory, Link} from 'react-router-dom';
+import {Link} from 'react-router-dom';
+import history from 'history/browser';
 import {GlobalContext} from '../context/globalstate';
 
 export const AddEmployee = () => {
@@ -7,7 +8,6 @@ export const AddEmployee = () => {
     const [location, setLocation] = useState('');
     const [designation, setDesignation] = useState('');
     const {addEmployee, employees} = useContext(GlobalContext);
-    let history = useHistory();
 
     const onSubmit = (e) => {
         e.preventDefault();

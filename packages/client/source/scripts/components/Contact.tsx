@@ -1,5 +1,5 @@
 import React from 'react';
-import {withRouter} from 'react-router-dom';
+// import {withRouter} from 'react-router-dom';
 
 const Contact = () => {
     return (
@@ -9,4 +9,4 @@ const Contact = () => {
     );
 };
 
-export default withRouter(Contact);
+export default Contact;

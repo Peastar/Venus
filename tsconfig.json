@@ -17,7 +17,8 @@
     "noImplicitAny": true,
     "noImplicitThis": true,
     "noImplicitReturns": true,
-    "strictNullChecks": true
+    "strictNullChecks": true,
+    "jsx": "react"
   },
   "include": [
     "packages/**/*"

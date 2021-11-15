@@ -17,7 +17,7 @@ module.exports = {
             // basePath: path.join(__dirname, 'source'),
             // assetPath: 'images',
             // from: 'source/styles/postcss/main.pcss',
-            // to: 'destination/styles/main.css'
+            // to: 'destination/styles/main.module.css'
         },
     },
 };

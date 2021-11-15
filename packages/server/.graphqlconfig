@@ -1,10 +1,10 @@
 {
-  "name": "Mercury",
+  "name": "Venus",
   "schemaPath": "schema.graphql",
   "extensions": {
     "endpoints": {
       "Default GraphQL Endpoint": {
-        "url": "http://localhost/graphql",
+        "url": "http://localhost:8080/graphql",
         "headers": {
           "user-agent": "JS GraphQL"
         },

@@ -1,11 +1,8 @@
 import React, {useState} from 'react';
-import {withRouter} from 'react-router-dom';
 import fetch from 'cross-fetch';
-import style from '../../styles/scss/main.scss';
-// import {useDispatch} from 'react-redux';
-// import * as actions from '../constants/action_types';
+import style from '../../styles/scss/main.module.scss';
 
-const Login = (props) => {
+const Login = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState(null);
@@ -84,4 +81,4 @@ const Login = (props) => {
     );
 };
 
-export default withRouter(Login);
+export default Login;

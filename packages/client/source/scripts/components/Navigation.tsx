@@ -1,27 +1,26 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
-import style from '../../styles/postcss/main.pcss';
-import scss from '../../styles/scss/main.scss';
+import style from '../../styles/scss/main.module.scss';
 
-const Navigation = () => {
+const Navigation: React.FunctionComponent = () => {
     return (
         <nav>
             <div className={style['left-nav']}>
                 <ul>
                     <li>
                         <Link to={'/'}>
-                            <div className={scss['home-link']}>Home</div>
+                            <div className={style['home-link']}>Home</div>
                         </Link>
                     </li>
                     <li>
                         <Link to={'/reality'}>
-                            <div className={scss['global-link']}>Reality</div>
+                            <div className={style['global-link']}>Reality</div>
                         </Link>
                     </li>
                     <li>
                         <Link to={'/contact'}>
-                            <div className={scss['global-link']}>Contact</div>
+                            <div className={style['global-link']}>Contact</div>
                         </Link>
                     </li>
                 </ul>

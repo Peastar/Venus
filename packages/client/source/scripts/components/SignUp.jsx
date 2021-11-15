@@ -1,8 +1,8 @@
 import React, {useContext, useState} from 'react';
-import {withRouter} from 'react-router-dom';
+// import {withRouter} from 'react-router-dom';
 import fetch from 'cross-fetch';
 import {GlobalContext} from '../context/globalstate';
-import style from '../../styles/scss/main.scss';
+import style from '../../styles/scss/main.module.scss';
 
 const SignUp = (props) => {
     const [name, setName] = useState('');
@@ -49,7 +49,7 @@ const SignUp = (props) => {
         console.log(requestOptions);
 
         try {
-            await fetch('http://localhost/graphql', requestOptions)
+            await fetch('http://localhost:8080/graphql', requestOptions)
                 .then((res) => {
                     console.log(res);
                     if (res.status >= 400) {
@@ -126,4 +126,4 @@ const SignUp = (props) => {
     );
 };
 
-export default withRouter(SignUp);
+export default SignUp;

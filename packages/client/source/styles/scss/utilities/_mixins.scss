@@ -1,7 +1,7 @@
 @mixin prefix($declarations, $prefixes: ()) {
     @each $property, $value in $declarations {
         @each $prefix in $prefixes {
-            #{'-' + $prefix + '-' + $property}: $value;
+            #{"-" + $prefix + "-" + $property}: $value;
         }
 
         #{$property}: $value;
@@ -11,12 +11,12 @@
 @mixin font-face($family, $filepath, $name, $weight, $style) {
     @font-face {
         font-family: quote($family);
-        src: url($filepath + 'eot/' + $name + '.eot'),
-            url($filepath + 'eot/' + $name + '.eot?#iefix')
-                format('embedded-opentype'),
-            url($filepath + 'woff2/' + $name + '.woff2') format('woff2'),
-            url($filepath + 'woff/' + $name + '.woff') format('woff'),
-            url($filepath + 'ttf/' + $name + '.ttf') format('truetype');
+        src: url($filepath + "eot/" + $name + ".eot"),
+            url($filepath + "eot/" + $name + ".eot?#iefix")
+                format("embedded-opentype"),
+            url($filepath + "woff2/" + $name + ".woff2") format("woff2"),
+            url($filepath + "woff/" + $name + ".woff") format("woff"),
+            url($filepath + "ttf/" + $name + ".ttf") format("truetype");
         //url($filepath + "svg/" + $name  + ".svg#" + $name + "") format("svg");
         font-weight: $weight;
         font-style: $style;
@@ -64,14 +64,14 @@
     position: $position;
 }
 
-@mixin absolute($args: '') {
+@mixin absolute($args: "") {
     @include position(absolute, $args);
 }
 
-@mixin fixed($args: '') {
+@mixin fixed($args: "") {
     @include position(fixed, $args);
 }
 
-@mixin relative($args: '') {
+@mixin relative($args: "") {
     @include position(relative, $args);
 }

@@ -1,3 +1,5 @@
+const path = require('path');
+
 const express = require('express');
 const webpack = require('webpack');
 const webpackDevMiddleware = require('webpack-dev-middleware');
@@ -21,5 +23,14 @@ app.use(
         heartbeat: 10 * 1000,
     })
 );
+
+app.get('*', (req, res) => {
+    const filename = path.join(compiler.outputPath, 'index.html');
+    compiler.outputFileSystem.readFile(filename, (err, result) => {
+        res.set('content-type', 'text/html');
+        res.send(result);
+        res.end();
+    });
+});
 
 app.listen(port, () => console.log(`Server is listening on port: ${port}`));
