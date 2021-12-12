@@ -1,6 +1,7 @@
 // const path = require('path');
 
 module.exports = {
+    syntax: 'postcss-scss',
     plugins: {
         'postcss-extend': {},
         'postcss-import': {},
@@ -16,7 +17,7 @@ module.exports = {
             // url: 'copy',
             // basePath: path.join(__dirname, 'source'),
             // assetPath: 'images',
-            // from: 'source/styles/postcss/main.pcss',
+            // from: 'source/styles/postcss/main.module.pcss',
             // to: 'destination/styles/main.module.css'
         },
     },

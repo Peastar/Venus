@@ -1,16 +1,16 @@
 import React, {useContext, useState} from 'react';
 // import {withRouter} from 'react-router-dom';
 import fetch from 'cross-fetch';
-import {GlobalContext} from '../context/globalstate';
+// import {GlobalContext} from '../context/globalstate';
 import style from '../../styles/scss/main.module.scss';
 
-const SignUp = (props) => {
+const SignUp = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState(null);
     const [loading, setLoading] = useState(false);
-    const {signUp, authUser} = useContext(GlobalContext);
+    // const {signUp, authUser} = useContext(GlobalContext);
 
     const handleChange = (setter) => (e) => {
         setter(e.target.value);

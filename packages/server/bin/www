@@ -99,11 +99,11 @@ if (process.env.NODE_ENV === 'production') {
     });
 
     const credentials = {
-        key: fs.readFileSync('/etc/letsencrypt/live/peacefulstar.art/privkey.pem'),
+        key: fs.readFileSync('/Volumes/Internal\ 1TB/private/etc/letsencrypt/live/peacefulstar.art/privkey.pem'),
         cert: fs.readFileSync(
-            '/etc/letsencrypt/live/peacefulstar.art/fullchain.pem',
+            '/Volumes/Internal 1TB/private/etc/letsencrypt/live/peacefulstar.art/fullchain.pem',
         ),
-        ca: fs.readFileSync('/etc/letsencrypt/live/peacefulstar.art/chain.pem'),
+        ca: fs.readFileSync('/Volumes/Internal\ 1TB/private/etc/letsencrypt/live/peacefulstar.art/chain.pem'),
     };
     const httpsServer = https.createServer(credentials, app);
     httpsServer.listen(443, () => {

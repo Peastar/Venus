@@ -48,11 +48,7 @@ app.use('/graphql', graphql);
 app.use('/.well-known/acme-challenge/', well);
 app.use(express.static(path.join(__dirname, '../client/destination')));
 app.get('*', handleRender);
-mongoose
-    .connect('mongodb://localhost:27017/venus', {
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
-    })
+mongoose.connect('mongodb://localhost:27017/venus', )
     .then(() => console.log('connection successful'))
     .catch((err) => console.error(err));
 

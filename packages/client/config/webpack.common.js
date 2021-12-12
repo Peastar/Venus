@@ -120,35 +120,31 @@ module.exports = {
             },
             {
                 test: /\.(png|jpe?g|gif|ico|svg)$/,
-                loader: 'file-loader',
-                options: {
-                    name: 'images/[name].[ext]',
-                    publicPath: '../',
-                },
+                type: 'asset/resource',
+                generator: {
+                    filename: './images/[name].[ext]'
+                }
             },
             {
                 test: /\.(ttf|eot|woff2?)$/,
-                loader: 'file-loader',
-                options: {
-                    name: 'fonts/[ext]/[name].[ext]',
-                    publicPath: '../',
-                },
+                type: 'asset/resource',
+                generator: {
+                    filename: './fonts/[name].[ext]'
+                }
             },
             {
                 test: /\.(mp4|ogv|webm)$/,
-                loader: 'file-loader',
-                options: {
-                    name: 'media/[name].[ext]',
-                    publicPath: '../',
-                },
+                type: 'asset/resource',
+                generator: {
+                    filename: './movie/[name].[ext]'
+                }
             },
             {
                 test: /\.pdf$/,
-                loader: 'file-loader',
-                options: {
-                    name: 'pdf/[name].[ext]',
-                    publicPath: '../',
-                },
+                type: 'asset/resource',
+                generator: {
+                    filename: './pdf/[name].[ext]'
+                }
             },
         ],
     },

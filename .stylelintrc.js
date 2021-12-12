@@ -1,5 +1,8 @@
-{
-  "rules": {
+module.exports = {
+  extends: ["stylelint-config-standard-scss", "stylelint-config-css-modules"],
+  // customSyntax: require('postcss-scss'),
+  // plugins: ["stylelint-scss"],
+  rules: {
     "at-rule-empty-line-before": [ "always", {
       "except": [ "blockless-after-blockless", "first-nested" ],
       "ignore": ["after-comment"]
