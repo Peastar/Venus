@@ -2,8 +2,8 @@ import React, {SyntheticEvent, useState} from 'react';
 // import {withRouter} from 'react-router-dom';
 
 import style from '../../styles/scss/main.module.scss';
-import en from '../../pdf/resume_e_Nov21.pdf';
-import ja from '../../pdf/resume_j_Nov21.pdf';
+import en from '../../pdf/resume_e_Jan22.pdf';
+import ja from '../../pdf/resume_j_Jan22.pdf';
 
 const Resume: React.FunctionComponent = () => {
     const [active, setActive] = useState(0);

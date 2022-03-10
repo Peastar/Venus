@@ -18,7 +18,8 @@
         "jsonwebtoken": "^8.5.1",
         "mongoose": "^6.0.8",
         "mongoose-sequence": "^5.2.2",
-        "morgan": "~1.10.0"
+        "morgan": "~1.10.0",
+        "smtp-server": "^3.9.0"
     },
     "devDependencies": {
         "@types/express": "^4.17.11",

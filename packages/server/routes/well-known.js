@@ -12,39 +12,51 @@ router.get('/', (req, res, next) => {
     res.json({message: 'Hello SSL'});
 });
 
-router.post('/QdvZkV4m_E1Fzs7_7O2AbDckIkZ3nZ3Ybls62xlpoTw', (req, res) => {
+router.post('/Zc8RjnzI0El2x9l2ZtFwYdYWxMiQq5FJzbd5PYa_MbM', (req, res) => {
     res.send(
-        'QdvZkV4m_E1Fzs7_7O2AbDckIkZ3nZ3Ybls62xlpoTw._rru0JgAEX1oWwR4SVw9QAtHkFZehQTvFNDzBKzvTbQ',
+        'Zc8RjnzI0El2x9l2ZtFwYdYWxMiQq5FJzbd5PYa_MbM.n9vhoVsr9f-p5AVhDGW_-NIPSlTUrf15Jo0eKIxokYI',
     );
 });
 
-router.get('/QdvZkV4m_E1Fzs7_7O2AbDckIkZ3nZ3Ybls62xlpoTw', (req, res) => {
+router.get('/Zc8RjnzI0El2x9l2ZtFwYdYWxMiQq5FJzbd5PYa_MbM', (req, res) => {
     res.send(
-        'QdvZkV4m_E1Fzs7_7O2AbDckIkZ3nZ3Ybls62xlpoTw._rru0JgAEX1oWwR4SVw9QAtHkFZehQTvFNDzBKzvTbQ',
+        'Zc8RjnzI0El2x9l2ZtFwYdYWxMiQq5FJzbd5PYa_MbM.n9vhoVsr9f-p5AVhDGW_-NIPSlTUrf15Jo0eKIxokYI',
     );
 });
 
-router.post('/1Tj_WGTRz_o3NNvkQKjye-0e6MrM8DfP_cBW2e9YflM', (req, res) => {
+router.post('/6RTrlJfHbIXeFZkdxsDro1Hk-vkev_uLUaInafubBjg', (req, res) => {
     res.send(
-        '1Tj_WGTRz_o3NNvkQKjye-0e6MrM8DfP_cBW2e9YflM._rru0JgAEX1oWwR4SVw9QAtHkFZehQTvFNDzBKzvTbQ',
+        '6RTrlJfHbIXeFZkdxsDro1Hk-vkev_uLUaInafubBjg.n9vhoVsr9f-p5AVhDGW_-NIPSlTUrf15Jo0eKIxokYI',
     );
 });
 
-router.get('/1Tj_WGTRz_o3NNvkQKjye-0e6MrM8DfP_cBW2e9YflM', (req, res) => {
+router.get('/6RTrlJfHbIXeFZkdxsDro1Hk-vkev_uLUaInafubBjg', (req, res) => {
     res.send(
-        '1Tj_WGTRz_o3NNvkQKjye-0e6MrM8DfP_cBW2e9YflM._rru0JgAEX1oWwR4SVw9QAtHkFZehQTvFNDzBKzvTbQ',
+        '6RTrlJfHbIXeFZkdxsDro1Hk-vkev_uLUaInafubBjg.n9vhoVsr9f-p5AVhDGW_-NIPSlTUrf15Jo0eKIxokYI',
     );
 });
 
-router.post('/EjnD-gegppPFYPYsqKijcZPCcAG06xEdI6j5r_C5HS0', (req, res) => {
+router.post('/WRZZ_sON3aJ47zHE1hgPkrSzQDAUNZz-wGNDiT7Y3DA', (req, res) => {
     res.send(
-        'EjnD-gegppPFYPYsqKijcZPCcAG06xEdI6j5r_C5HS0._rru0JgAEX1oWwR4SVw9QAtHkFZehQTvFNDzBKzvTbQ',
+        'WRZZ_sON3aJ47zHE1hgPkrSzQDAUNZz-wGNDiT7Y3DA.n9vhoVsr9f-p5AVhDGW_-NIPSlTUrf15Jo0eKIxokYI',
     );
 });
 
-router.get('/EjnD-gegppPFYPYsqKijcZPCcAG06xEdI6j5r_C5HS0', (req, res) => {
+router.get('/WRZZ_sON3aJ47zHE1hgPkrSzQDAUNZz-wGNDiT7Y3DA', (req, res) => {
     res.send(
-        'EjnD-gegppPFYPYsqKijcZPCcAG06xEdI6j5r_C5HS0._rru0JgAEX1oWwR4SVw9QAtHkFZehQTvFNDzBKzvTbQ',
+        'WRZZ_sON3aJ47zHE1hgPkrSzQDAUNZz-wGNDiT7Y3DA.n9vhoVsr9f-p5AVhDGW_-NIPSlTUrf15Jo0eKIxokYI',
+    );
+});
+
+router.post('/xqPfHhRCJUv-jku9j8f9kSPis-79CrYEc0XoMfoo9WM', (req, res) => {
+    res.send(
+        'xqPfHhRCJUv-jku9j8f9kSPis-79CrYEc0XoMfoo9WM.n9vhoVsr9f-p5AVhDGW_-NIPSlTUrf15Jo0eKIxokYI',
+    );
+});
+
+router.get('/xqPfHhRCJUv-jku9j8f9kSPis-79CrYEc0XoMfoo9WM', (req, res) => {
+    res.send(
+        'xqPfHhRCJUv-jku9j8f9kSPis-79CrYEc0XoMfoo9WM.n9vhoVsr9f-p5AVhDGW_-NIPSlTUrf15Jo0eKIxokYI',
     );
 });
 

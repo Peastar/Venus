@@ -5,7 +5,7 @@ import style from '../../styles/scss/main.module.scss';
 
 const Home = () => {
     return (
-        <div className={style['full-image']} />
+        <div className={style.full_image} />
         );
 };
 
